@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./public/css/styleSignin.css">
+    <title>RYZEN | Login</title>
+</head>
+<body>
+    <!-- Header -->
+    
+    <header class='desktop-header' id='hero'>
+        <div class='container col-xl-11 cabecera'>
+            <nav class='row navbar navegacion navbar-dark'>
+    
+                <span class='logo'>
+                    <p style='margin-bottom: 0;'><a href='/'>RYZEN</a></p>
+                </span>
+                <ul style='margin-bottom: 0;'>
+                    <li class='nav-item active'><a href='categories-visors.html'>VISORES</a></li>
+                    <li class='nav-item'><a href='/productos/aplicaciones'>APPS Y JUEGOS</a></li>
+                    <li class='nav-item'><a href='about-us.html'>QUIÉNES SOMOS</a></li>
+                    <div class='underbar'></div>
+                </ul>
+            </nav>
+            <span class='dos'>
+                <span class='registro'>
+                    <li><a href='login.html'>LOGIN</a></li>
+                    <li><a href='register.html'>REGISTRO</a></li>
+                </span>
+                <span class='iconos'>
+                    <i class='fas fa-search' id='icon-search'></i>
+                    <a href='shopCart.html'><i class='fas fa-shopping-cart'></i></a>
+                </span>
+            </span>
+        </div>
+    </header>
+    
+    <div id='container-search'>
+        <input type='text' id='input-search' placeholder='¿Qué estás buscando?'>
+    </div>
+    
+    <div id='box-search'>
+        <ul>
+            <li><a href='categories-visors.html'><span class='iconos'><i class='fas fa-search'></i></span>Visores</a></li>
+            <li><a href='/productos/aplicaciones'><span class='iconos'><i class='fas fa-search'></i></span>Aplicaciones</a>
+            </li>
+            <li><a href='/productos/aplicaciones'><span class='iconos'><i class='fas fa-search'></i></span>Juegos</a></li>
+            <li><a href='shopCart.html'><span class='iconos'><i class='fas fa-search'></i></span>Carrito</a></li>
+            <li><a href='login.html'><span class='iconos'><i class='fas fa-search'></i></span>Login</a></li>
+            <li><a href='register.html'><span class='iconos'><i class='fas fa-search'></i></span>Registro</a></li>
+            <li><a href='/perfil'><span class='iconos'><i class='fas fa-search'></i></span>Perfil</a></li>
+            <li><a href='about-us.html'><span class='iconos'><i class='fas fa-search'></i></span>Quienes Somos</a></li>
+            <li><a href='acerOjo.html'><span class='iconos'><i class='fas fa-search'></i></span>Acer OJO 500</a></li>
+            <li><a href='oculusRift.html'><span class='iconos'><i class='fas fa-search'></i></span>Oculus Rift S</a></li>
+            <li><a href='samsungGear.html'><span class='iconos'><i class='fas fa-search'></i></span>Samsung Gear VR</a></li>
+            <li><a href='oculusTouch.html'><span class='iconos'><i class='fas fa-search'></i></span>Joystick Oculus
+                    Touch</a>
+            </li>
+            <li><a href='/productos/5'><span class='iconos'><i class='fas fa-search'></i></span>Astro Bot</a></li>
+        </ul>
+    </div>
+    
+    <div id='cover-container-search'>
+    
+    </div>
+    
+    <header class='mobile-header' id='hero'>
+    
+        <nav class='mobileNavbar navbar navbar-expand-lg'>
+            <!-- navbar-light bg-light -->
+            <a class='navbar-brand navLogo' href='/'>RYZEN</a>
+    
+            <span class='iconos' id='iconoMb'>
+                <i class='fas fa-search' id='icon-search-mb'></i>
+            </span>
+    
+            <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent'
+                aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
+                <i class='fas fa-bars'></i>
+            </button>
+    
+            <div class='collapse navbar-collapse' id='navbarSupportedContent'>
+                <ul class='navbar-nav mr-auto'>
+                    <li class='nav-items active'>
+                        <i class='fas fa-home'></i><a class='nav-link' href='/'>HOME <span
+                                class='sr-only'>(current)</span></a>
+                    </li>
+                    <li class='nav-items'>
+                        <i class='fas fa-sign-in-alt'></i><a class='nav-link' href='login.html'>LOGIN</a>
+                    </li>
+                    <li class='nav-items'>
+                        <i class='fas fa-user-plus'></i><a class='nav-link' href='register.html'>REGISTRO</a>
+                    </li>
+                    <li class='nav-items'>
+                        <i class='fas fa-vr-cardboard'></i><a class='nav-link' href='categories-visors.html'>VISORES</a>
+                    </li>
+                    <li class='nav-items'>
+                        <i class='fas fa-gamepad'></i><a class='nav-link' href='/productos/aplicaciones'>APPS Y JUEGOS</a>
+                    </li>
+                    <li class='nav-items'>
+                        <i class='fas fa-briefcase'></i><a class='nav-link' href='about-us.html'> QUIÉNES SOMOS</a>
+                    </li>
+                    <li class='nav-items'>
+                        <i class='fas fa-shopping-cart'></i><a class='nav-link' href='shopCart.html'> CARRITO</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id='container-search-mb'>
+        <input type='text' id='input-search-mb' placeholder='¿Qué estás buscando?'>
+    </div>
+    
+    <div id='box-search-mb'>
+        <ul>
+            <li><a href='categories-visors.html'><span class='iconos'><i class='fas fa-search'></i></span>Visores</a></li>
+            <li><a href='/productos/aplicaciones'><span class='iconos'><i class='fas fa-search'></i></span>Aplicaciones</a>
+            </li>
+            <li><a href='/productos/aplicaciones'><span class='iconos'><i class='fas fa-search'></i></span>Juegos</a></li>
+            <li><a href='shopCart.html'><span class='iconos'><i class='fas fa-search'></i></span>Carrito</a></li>
+            <li><a href='login.html'><span class='iconos'><i class='fas fa-search'></i></span>Login</a></li>
+            <li><a href='register.html'><span class='iconos'><i class='fas fa-search'></i></span>Registro</a></li>
+            <li><a href='/perfil'><span class='iconos'><i class='fas fa-search'></i></span>Perfil</a></li>
+            <li><a href='about-us.html'><span class='iconos'><i class='fas fa-search'></i></span>Quienes Somos</a></li>
+            <li><a href='acerOjo.html'><span class='iconos'><i class='fas fa-search'></i></span>Acer OJO 500</a></li>
+            <li><a href='oculusRift.html'><span class='iconos'><i class='fas fa-search'></i></span>Oculus Rift S</a></li>
+            <li><a href='samsungGear.html'><span class='iconos'><i class='fas fa-search'></i></span>Samsung Gear VR</a></li>
+            <li><a href='oculusTouch.html'><span class='iconos'><i class='fas fa-search'></i></span>Joystick Oculus
+                    Touch</a>
+            </li>
+            <li><a href='/productos/5'><span class='iconos'><i class='fas fa-search'></i></span>Astro Bot</a></li>
+        </ul>
+    </div>
+    
+    <div id='cover-container-search-mb'>
+    
+    </div>
+
+    <!-- /Header -->
+    
+    <div class="wrap">
+        <div id="wrapper">
+            <div class="form-container">
+                <form action="/login" method="post">
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <label for="username"></label>
+                        <input type="username" placeholder="Usuario" required name="username">
+                        <span class="bar"></span>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <label for="password"></label>
+                        <input type="password" placeholder="Contraseña" required name="password">
+                        <span class="bar"></span>
+                    </div>
+                    <div class="input-group" style="padding-top: 11px;">
+                        <input class="checkbox" id="checkbox" type="checkbox" value="" name="rememberUser">
+                        <label class="remember" for="checkbox" style="margin-bottom: 0px; height: 16px;">Recuérdame</label>
+                    </div>
+                    <div class="input-group">
+                        <button type="submit">
+                            <i class="fas fa-vr-cardboard"></i>
+                        </button>
+                    </div>
+                    <div class="switch-login">
+                        <p>¿Todavía no tienes una cuenta? <a href="register.html"><span>Regístrate</span></a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Aqui finaliza EJS y Forms -->
+
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="./public/js/js.js"></script>
+    <script src="./public/js/search.js"></script>
+
+    <script text="text/javascript">
+        var cursor = document.querySelector('.cursor')
+        var cursor2 = document.querySelector('.cursor2')
+
+        document.addEventListener('mousemove', function (e) {
+            cursor.style.cssText = cursor2.style.cssText = 'left: ' + e.clientX + 'px; top: ' + e.clientY + 'px;'
+        })
+    </script>
+
+    
+</body>
+</html>

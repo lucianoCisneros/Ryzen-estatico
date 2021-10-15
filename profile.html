@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/d92a2a2802.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styleProfile.css">
+    
+    <title>RYZEN | Perfil</title>
+</head>
+<body>
+    <!-- Header -->
+    <%- include('partials/headerNavBar') %>
+    <%- include('partials/mobileNavBar') %>
+    <!-- /Header -->
+    <div class="profile">
+        <div class="profileContainer">
+            <div class="title container">
+                <h2>Panel de usuario</h2>
+            </div>
+            <div class="options container">
+                <div class="profileData container">
+                    <div class="name">
+                        <p>Bienvenido <%= locals.user.name + ' ' + locals.user.lastName %></p>
+                    </div>
+                </div>
+                <div class="profileOptions">
+                    <div class="profileChanges">
+                        <div class="linksDiv">
+                            <a href="/perfil/historial">Historial de compras</a><i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="linksDiv">
+                            <a href="">Cambiar contraseña</a><i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <% if (locals.user.rol == 10) { %>
+                <div class="adminOptions">
+                    <div class="productOptions">
+                        <div class="linksDiv">
+                        <a href="/productos/crear">Crear producto</a><i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="linksDiv">
+                        <a href="/productos/editar">Editar producto</a><i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="categoryOptions">
+                        <div class="linksDiv">
+                        <a href="/categorias/crear">Crear categoría</a><i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="linksDiv">
+                        <a href="/categorias/editar">Editar categoría</a><i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="permissionOptions">
+                        <div class="linksDiv">
+                        <a href="">Cambiar permisos</a><i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+    <!-- Footer-->
+    <%- include('partials/footer') %>
+    <!-- /Footer-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+        <script src="/js/search.js"></script>
+</body>
+</html>
